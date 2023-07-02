@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="iconos">
+    <file>color_select.png</file>
+  </qresource>
+</RCC>

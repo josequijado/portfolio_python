@@ -1,0 +1,9 @@
+altgraph==0.17.3
+macholib==1.16.2
+modulegraph==0.19.5
+py2app==0.28.6
+pyperclip==1.8.2
+PySide6==6.5.1.1
+PySide6-Addons==6.5.1.1
+PySide6-Essentials==6.5.1.1
+shiboken6==6.5.1.1
