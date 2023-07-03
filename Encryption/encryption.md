@@ -16,4 +16,4 @@ La contraseña encriptada se almacena en una base de datos, o un fichero de conf
 pwd_hasheada = "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8"
 print (Encryption.verify(pwd_tecleada, pwd_hasheada))
 
-# Devuelve True</code>
+\# Devuelve True</code>
