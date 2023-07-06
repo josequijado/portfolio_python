@@ -117,6 +117,19 @@ class DBAccess:
         self.cursor.execute(query)
         tables = [table[0] for table in self.cursor.fetchall()]
         return tables
+    
+    def get_columns(self, tabla):
+        # Devuelve la lista de columnas de una tabla
+        if self.engine == "1": # MySQL
+            query = f"SHOW COLUMNS FROM {tabla}"
+        elif self.engine == "2": # PostgreSQL
+            query = f"SELECT column_name, data_type, character_maximum_length\
+                FROM information_schema.columns WHERE table_name = {tabla};"
+        elif self.engine == "3": # SQLite
+            query = f"PRAGMA table_info({tabla});"
+        self.cursor.execute(query)
+        columnas = [column[0] for column in self.cursor.fetchall()]
+        return columnas
 
     def get_data(self, query, params=None):
         # Ejecuta una consulta de recuperación de datos y devuelve el resultado de esa consulta.
