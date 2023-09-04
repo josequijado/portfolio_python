@@ -16,4 +16,4 @@ La clase está profusamente documentada, para que sea fácil de integrar en cual
 
   + pip install setuptools
 
-  + pip install git+https://github.com/theskumar/python-dotenv.git@v0.10.3
+  + pip install git https://github.com/theskumar/python-dotenv.git@v0.10.3
