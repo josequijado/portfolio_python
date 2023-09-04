@@ -9,3 +9,9 @@ La clase permite:
 - Los métodos de la clase se usan directamente a partir de la misma, sin necesidad de instanciarla.
 
 La clase está profusamente documentada, para que sea fácil de integrar en cualquier proyecto.
+
+# INSTALACIONES
+
+pip install colorlog
+pip install setuptools
+pip install git+https://github.com/theskumar/python-dotenv.git@v0.10.3
