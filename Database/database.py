@@ -9,7 +9,7 @@ class DBAccess:
     #       1 - MySQL
     #       2 - PostgreSQL
     #       3 - SQLite
-    def __init__(self, engine = "1", port = "3306", host = "localhost", user = "root", password = ""):
+    def __init__(self, engine, port, host, user, password):
         # Se accede al motor de base de datos con los datos por defecto
         self.host = host
         self.user = user
