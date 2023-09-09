@@ -40,6 +40,8 @@ Para usar la clase es necesario instanciarla en un objeto de base de datos que s
 
 Esto creará un objeto de acceso a base de datos con los valores por defecto establecidos en el constructor, que hemos listado en la sección **Prestaciones de la clase**.
 
+**Atención.** Los datos de conexión se han quitado de la clase para que se importen de un archivo extenrno de configuración.
+
 Si necesitamos crear un objeto con otra configuración podremos pasar los parámetros necesarios en el consructor, así:
 <code>objeto_db = DBAccess(engine = "2", host = "servidor.com", port = "5432", user = "user", password = "password")</code>
 
