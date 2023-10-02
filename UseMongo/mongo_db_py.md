@@ -17,6 +17,7 @@ El archivo <code>mongo_conn.py</code> tiene la siguiente estructura:
     "port" : "", 
     "user": "", 
     "password": ""
+    notificaciones: False # Para indicar si los errores se muestran o no. En depuraciones se debería poner en True.
 }
 </pre>
 
@@ -67,7 +68,8 @@ Los parámetros de autenticación (**<code>user</code>** y **<code>password</cod
 #### A nivel de índice.
 - **<code>add_index</code>**. Crea un índice sobre los documentos de la colección seleccionada. Recibe los siguientes parámetros.
 -- **<code>indexes</code>**. Es el nombre de la clave sobre la que se crea el índice
--- **<code>orders</code>**. Es una lista de valores booleanos, para indicar si cada índice es <code>ASCENDING</code> (<code>True</code>) o <code>DESCENDING</code> (<code>False</code>). Si hay menos orders que indexes la matris orders se complementa, en el método, con valores <code>False</code>.
+-- **<code>orders</code>**. Es una lista de valores <code>ASCENDING</code> o <code>DESCENDING</code>. Si hay menos orders que indexes la matris orders se complementa, en el método, con valores <code>ASCENDING</code>.
+-- **<code>uniques</code>**. Es una lista de valores booleanos para indicar si cada índice debe tener la claúsula **unique** o no.
 - **<code>remove_idx</code>**. Elimina índices de una colección.
 -- **<code>indexes</code>**. Recibe una lista de índices para eliminar.
 - **<code>list idx</code>**. Devuelve una lista de los índices en la colección en curso.
