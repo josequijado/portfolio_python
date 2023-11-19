@@ -1,5 +1,5 @@
 import logging
-import colorlog
+import colorlog # pip install colorlog
 import os
 from dotenv import load_dotenv
 
