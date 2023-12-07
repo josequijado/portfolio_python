@@ -1,3 +1,7 @@
+# Instalar las librerías necesarias
+# pip install mysql-connector
+# pip install psycopg2
+
 import mysql.connector as dbc
 import sqlite3
 import psycopg2
